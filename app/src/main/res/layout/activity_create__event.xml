@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create_Event"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Name"/>
+    <EditText
+        android:layout_margin="5dp"
+        android:background="@drawable/simple_border"
+        android:id="@+id/edteventname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:maxLength="50"
+       />
+
+    <EditText
+        android:layout_margin="5dp"
+        android:background="@drawable/simple_border"
+        android:visibility="gone"
+        android:id="@+id/edt_discription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:maxLength="300"
+        android:hint="select participant"/>
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event date"/>
+    <TextView
+        android:layout_margin="5dp"
+        android:background="@drawable/simple_border"
+        android:id="@+id/edtdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:maxLength="300"
+        android:text=""/>
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Time"/>
+    <TextView
+        android:layout_margin="5dp"
+        android:background="@drawable/simple_border"
+        android:id="@+id/edttime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:maxLength="10"
+        android:text=""/>
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Participant"/>
+    <TextView
+        android:layout_margin="5dp"
+        android:background="@drawable/simple_border"
+        android:padding="10dp"
+        android:id="@+id/txtparticipants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Submit"
+        android:background="@color/colorAccent"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnLodEvent"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Check Event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+
+<android.support.v7.widget.RecyclerView
+    android:layout_margin="5dp"
+    android:id="@+id/RVList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</android.support.v7.widget.RecyclerView>
+</LinearLayout>
