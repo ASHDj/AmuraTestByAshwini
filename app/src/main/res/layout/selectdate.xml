@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:id="@+id/txtAlertTitle"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:layout_below="@id/txtAlertTitle"
+        android:id="@+id/edtdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+        android:clickable="true"
+        android:focusableInTouchMode="false"
+        android:hint="select Date"
+        android:padding="10dp"
+        android:textSize="12dp"
+        android:windowSoftInputMode="stateHidden"
+        />
+    <Button
+        android:id="@+id/btnok"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:focusableInTouchMode="false"
+        android:hint="submit"
+        android:padding="10dp"
+        android:textSize="12dp"
+        android:windowSoftInputMode="stateHidden"
+        />
+
+
+</LinearLayout>

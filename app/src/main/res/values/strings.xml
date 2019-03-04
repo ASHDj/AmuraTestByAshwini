@@ -1,12 +1,27 @@
 <resources>
     <string name="app_name">EventManagment</string>
     <string name="title_activity_dashboard">Dashboard</string>
-    <string name="title_home">Home</string>
+    <string name="title_home">Event Home</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="title_addevent">Notifications</string>
-    <string name="tile_show_event">Notifications</string>
-    <string name="tile_month_event">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Monthly">Monthly</string>
+    <string name="Hourly">Hourly</string>
+    <string-array name="arr_Month">
+    <item>January</item>
+    <item>February</item>
+    <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>Aug</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
 
 
 </resources>

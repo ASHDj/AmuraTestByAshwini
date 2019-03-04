@@ -70,7 +70,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             AppUtil.showToast(LoginActivity.this, "Login error!");
                         } else {
                             //When login successful, redirect user to main activity
-                            Intent intent = new Intent(LoginActivity.this, EventList.class);
+                            Intent intent = new Intent(LoginActivity.this, Dashboard.class);
                             startActivity(intent);
                             finish();
                         }

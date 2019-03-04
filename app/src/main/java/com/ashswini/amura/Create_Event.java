@@ -159,7 +159,7 @@ public class Create_Event extends AppCompatActivity implements View.OnClickListe
             EventModel eventModel = new EventModel();
             eventModel.setId(mDatabase.child("event").push().getKey());
             eventModel.setEventname(strname);
-            eventModel.setDate(strdate);
+            eventModel.setDate(AppUtil.GetSTRingFRomStringDate(strdate,"yyyy-MM-dd"));
             eventModel.setTime(strtime);
             eventModel.setParticipant(selectedUserList);
             mDatabase.child("event").child(eventModel.getId()).setValue(eventModel);
@@ -197,7 +197,7 @@ public class Create_Event extends AppCompatActivity implements View.OnClickListe
                     public void onDateSet(DatePicker view, int year,
                                           int monthOfYear, int dayOfMonth) {
 
-                        edtdate.setText(dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
+                        edtdate.setText(year + "-" + (monthOfYear + 1) + "-" + dayOfMonth);
 
                     }
                 }, mYear, mMonth, mDay);
