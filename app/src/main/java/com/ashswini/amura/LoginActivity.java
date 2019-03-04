@@ -50,7 +50,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 password=edtpassword.getText().toString().trim();
                 if (TextUtils.isEmpty(email) || TextUtils.isEmpty(password))
                 {
-
+                AppUtil.showToast(getApplicationContext(),"username & password can not be empty");
                 }else {
                     authenticateUser(email, password);
                 }

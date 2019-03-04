@@ -27,14 +27,12 @@ public class Register_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_activity);
-
         FirebaseApp.initializeApp(this);
         auth = FirebaseAuth.getInstance();
         btnLogin = findViewById(R.id.login);
         btnSignUp = findViewById(R.id.sign_up);
         email = (EditText) findViewById(R.id.edt_username);
         password = (EditText) findViewById(R.id.edt_username);
-
         //go to Login Activity
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,10 +60,10 @@ public class Register_activity extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (!task.isSuccessful()) {
                                         progressDialog.dismiss();
-                                        AppUtil.showToast(Register_activity.this, "Register failed!");
+                                        AppUtil.showToast(Register_activity.this, task.toString()+"Register failed!");
                                     } else {
                                         AppUtil.showToast(Register_activity.this, "Register successful!");
-                                     //   startActivity(new Intent(Register_activity.this, LoginActivity.class));
+                                       startActivity(new Intent(Register_activity.this, LoginActivity.class));
                                         progressDialog.dismiss();
                                       //  finish();
                                     }

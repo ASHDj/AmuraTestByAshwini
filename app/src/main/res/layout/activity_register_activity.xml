@@ -22,11 +22,11 @@
             android:id="@+id/edt_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="email"
             android:inputType="textEmailAddress"
             android:singleLine="true"
             android:padding="10dp"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/black" />
 
 
 
@@ -41,8 +41,7 @@
             android:inputType="textPassword"
             android:singleLine="true"
             android:background="@drawable/simple_border"
-            android:textColor="@android:color/white" />
-
+            android:textColor="@android:color/black" />
 
     <Button
         android:id="@+id/sign_up"
@@ -54,7 +53,8 @@
         android:text="Register"
         android:visibility="visible"
         android:textColor="@android:color/white"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        />
     <Button
         android:id="@+id/login"
         android:layout_width="match_parent"
